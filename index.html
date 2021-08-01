@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<section>
+			<div class="side" id="side1">
+				<video
+					src="./butterfly.mp4"
+					type="video/mp4"
+					autoplay
+					loop
+				></video>
+			</div>
+			<div class="side" id="side2">
+				<video
+					src="./butterfly.mp4"
+					type="video/mp4"
+					autoplay
+					loop
+				></video>
+			</div>
+		</section>
+
+		<div class="content">
+			<h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, asperiores?</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+				quo ipsum, iusto amet corporis explicabo unde harum provident
+				quam doloribus similique repellendus aperiam doloremque? Nostrum
+				temporibus quos rem quibusdam quisquam quaerat maxime
+				consectetur laboriosam, perferendis ut saepe aperiam aspernatur
+				accusantium non adipisci repudiandae soluta repellat rerum
+				sapiente animi odit iure quae! Iusto optio debitis deserunt quas
+				facilis minima eos exercitationem!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, praesentium? Nesciunt sed delectus animi consectetur quo fuga nostrum tempore? Eos inventore consequuntur fugit. Possimus expedita aliquid quam dignissimos, voluptate porro autem reiciendis placeat quaerat reprehenderit. Inventore quae adipisci rerum odit minus delectus saepe vel labore qui a, enim alias error ex accusantium? Illo eaque ratione explicabo, eius ipsa rerum placeat enim nisi autem repellat debitis. Eius expedita, sunt eveniet dicta magni inventore necessitatibus aliquam quisquam quaerat corrupti ullam dolorem cupiditate doloribus sed assumenda aut! Voluptatum autem illo doloremque quos deserunt.
+			</p>
+		</div>
+	</body>
+
+    <script>
+        let side1 = document.getElementById('side1');
+        let side2 = document.getElementById('side2');
+
+        window.addEventListener('scroll', function(){
+            side1.style.left = -window.pageYOffset+ 'px';
+            side2.style.left = window.pageYOffset+ 'px';
+        })
+    </script>
+</html>
